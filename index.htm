@@ -604,135 +604,135 @@
 
 
     <script>
-    // Fix for --SETTINGS container to be responsive dynamically
-    (function() {
-        // --- VR Mode Detection via WebGL Viewport Proxy ---
-        window.isVrModeRendered = false;
-        var vrTimeout = null;
-        
-        function proxyViewport(ContextClass) {
-            if (!ContextClass) return;
-            var origViewport = ContextClass.prototype.viewport;
-            ContextClass.prototype.viewport = function(x, y, w, h) {
-                // In VR stereoscopic mode, the right eye viewport starts at x = w
-                if (x > 0 && Math.abs(x - w) <= 10) {
-                    window.isVrModeRendered = true;
-                    if (vrTimeout) clearTimeout(vrTimeout);
-                    vrTimeout = setTimeout(function() { 
-                        window.isVrModeRendered = false; 
-                    }, 500);
-                }
-                return origViewport.apply(this, arguments);
-            };
-        }
-        
-        try {
-            proxyViewport(window.WebGLRenderingContext);
-            proxyViewport(window.WebGL2RenderingContext);
-        } catch(e) { console.error("VR proxy failed", e); }
-        
-        // Override screen width getters to trick 3DVista into rendering a narrower canvas in VR
-        var idealWidthVR = 0;
-        var realInnerWidthGetter = Object.getOwnPropertyDescriptor(window, 'innerWidth');
-        var realClientWidthGetter = Object.getOwnPropertyDescriptor(Element.prototype, 'clientWidth');
-        
-        if (realInnerWidthGetter && realInnerWidthGetter.configurable) {
-            Object.defineProperty(window, 'innerWidth', {
-                get: function() {
-                    var realW = realInnerWidthGetter.get ? realInnerWidthGetter.get.call(window) : realInnerWidthGetter.value;
-                    if (window.isVrModeRendered && idealWidthVR > 0 && realW > idealWidthVR) return idealWidthVR;
-                    return realW;
-                }
-            });
-        }
-        
-        if (realClientWidthGetter && realClientWidthGetter.configurable) {
-            Object.defineProperty(document.documentElement, 'clientWidth', {
-                get: function() {
-                    var realW = realClientWidthGetter.get ? realClientWidthGetter.get.call(this) : window.innerWidth;
-                    if (window.isVrModeRendered && idealWidthVR > 0 && realW > idealWidthVR) return idealWidthVR;
-                    return realW;
-                }
-            });
-        }
+        // Fix for --SETTINGS container to be responsive dynamically
+        (function () {
+            // --- VR Mode Detection via WebGL Viewport Proxy ---
+            window.isVrModeRendered = false;
+            var vrTimeout = null;
 
-        var vrStatePrev = false;
+            function proxyViewport(ContextClass) {
+                if (!ContextClass) return;
+                var origViewport = ContextClass.prototype.viewport;
+                ContextClass.prototype.viewport = function (x, y, w, h) {
+                    // In VR stereoscopic mode, the right eye viewport starts at x = w
+                    if (x > 0 && Math.abs(x - w) <= 10) {
+                        window.isVrModeRendered = true;
+                        if (vrTimeout) clearTimeout(vrTimeout);
+                        vrTimeout = setTimeout(function () {
+                            window.isVrModeRendered = false;
+                        }, 500);
+                    }
+                    return origViewport.apply(this, arguments);
+                };
+            }
 
-        function adjustSettings() {
-            var isLandscape = window.innerWidth > window.innerHeight;
-            var isMobile = Math.min(window.screen.width, window.screen.height) <= 550;
-            
-            // VR Mode layout adjustments
-            var viewer = document.getElementById('viewer');
-            if (viewer) {
-                var realW = window.screen.width;
-                if (window.innerWidth > realW) realW = window.innerWidth; // fallback
-                
-                if (window.isVrModeRendered && isLandscape && isMobile) {
-                    idealWidthVR = window.innerHeight * 1.8; // Limit to ~ 18:9 aspect ratio
-                    if (realW > idealWidthVR) {
-                        var leftOffset = (realW - idealWidthVR) / 2;
-                        viewer.style.setProperty('width', idealWidthVR + 'px', 'important');
-                        viewer.style.setProperty('left', leftOffset + 'px', 'important');
-                        document.body.style.backgroundColor = '#000';
+            try {
+                proxyViewport(window.WebGLRenderingContext);
+                proxyViewport(window.WebGL2RenderingContext);
+            } catch (e) { console.error("VR proxy failed", e); }
+
+            // Override screen width getters to trick 3DVista into rendering a narrower canvas in VR
+            var idealWidthVR = 0;
+            var realInnerWidthGetter = Object.getOwnPropertyDescriptor(window, 'innerWidth');
+            var realClientWidthGetter = Object.getOwnPropertyDescriptor(Element.prototype, 'clientWidth');
+
+            if (realInnerWidthGetter && realInnerWidthGetter.configurable) {
+                Object.defineProperty(window, 'innerWidth', {
+                    get: function () {
+                        var realW = realInnerWidthGetter.get ? realInnerWidthGetter.get.call(window) : realInnerWidthGetter.value;
+                        if (window.isVrModeRendered && idealWidthVR > 0 && realW > idealWidthVR) return idealWidthVR;
+                        return realW;
+                    }
+                });
+            }
+
+            if (realClientWidthGetter && realClientWidthGetter.configurable) {
+                Object.defineProperty(document.documentElement, 'clientWidth', {
+                    get: function () {
+                        var realW = realClientWidthGetter.get ? realClientWidthGetter.get.call(this) : window.innerWidth;
+                        if (window.isVrModeRendered && idealWidthVR > 0 && realW > idealWidthVR) return idealWidthVR;
+                        return realW;
+                    }
+                });
+            }
+
+            var vrStatePrev = false;
+
+            function adjustSettings() {
+                var isLandscape = window.innerWidth > window.innerHeight;
+                var isMobile = Math.min(window.screen.width, window.screen.height) <= 550;
+
+                // VR Mode layout adjustments
+                var viewer = document.getElementById('viewer');
+                if (viewer) {
+                    var realW = window.screen.width;
+                    if (window.innerWidth > realW) realW = window.innerWidth; // fallback
+
+                    if (window.isVrModeRendered && isLandscape && isMobile) {
+                        idealWidthVR = window.innerHeight * 1.8; // Limit to ~ 18:9 aspect ratio
+                        if (realW > idealWidthVR) {
+                            var leftOffset = (realW - idealWidthVR) / 2;
+                            viewer.style.setProperty('width', idealWidthVR + 'px', 'important');
+                            viewer.style.setProperty('left', leftOffset + 'px', 'important');
+                            document.body.style.backgroundColor = '#000';
+                        }
+                    } else {
+                        idealWidthVR = 0;
+                        viewer.style.setProperty('width', '100%', 'important');
+                        viewer.style.setProperty('left', '0px', 'important');
+                        document.body.style.backgroundColor = '#FFF';
+                    }
+
+                    // Force a resize event if VR state changes so 3DVista recalculates everything
+                    if (vrStatePrev !== window.isVrModeRendered) {
+                        vrStatePrev = window.isVrModeRendered;
+                        window.dispatchEvent(new Event('resize'));
+                    }
+                }
+
+                if (!window.tdvplayer) return;
+                var settingsContainer = window.tdvplayer.getById('Container_B156A269_BF46_B846_41CC_86CDE6B7F756');
+                if (!settingsContainer) return;
+
+                var isFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
+
+                if (isMobile) {
+                    if (isLandscape && isFullscreen) {
+                        settingsContainer.set('right', '3%');
+                    } else {
+                        settingsContainer.set('right', '2%');
+                    }
+                }
+
+                var buttonMenuSup = window.tdvplayer.getById('Container_B1571269_BF46_B846_41D9_B94D861499DF');
+                var buttonSetContainer = window.tdvplayer.getById('Container_B1573269_BF46_B846_41AD_E3E55F50C328');
+
+                if (isMobile && isLandscape && !window.isVrModeRendered) {
+                    var availH = window.innerHeight - 10;
+                    if (availH < 588) settingsContainer.set('height', availH);
+                    settingsContainer.set('overflow', 'visible');
+
+                    if (buttonSetContainer) {
+                        buttonSetContainer.set('top', 110);
+                        var remainH = availH - 115;
+                        if (remainH > 450) remainH = 450;
+                        buttonSetContainer.set('height', remainH);
+                        buttonSetContainer.set('overflow', 'scroll');
                     }
                 } else {
-                    idealWidthVR = 0;
-                    viewer.style.setProperty('width', '100%', 'important');
-                    viewer.style.setProperty('left', '0px', 'important');
-                    document.body.style.backgroundColor = '#FFF';
-                }
-                
-                // Force a resize event if VR state changes so 3DVista recalculates everything
-                if (vrStatePrev !== window.isVrModeRendered) {
-                    vrStatePrev = window.isVrModeRendered;
-                    window.dispatchEvent(new Event('resize'));
+                    settingsContainer.set('height', 588.15);
+                    settingsContainer.set('overflow', 'scroll');
+                    if (buttonSetContainer) {
+                        buttonSetContainer.set('top', '14.96%');
+                        buttonSetContainer.set('height', '59.417%');
+                        buttonSetContainer.set('overflow', 'visible');
+                    }
                 }
             }
 
-            if (!window.tdvplayer) return;
-            var settingsContainer = window.tdvplayer.getById('Container_B156A269_BF46_B846_41CC_86CDE6B7F756');
-            if (!settingsContainer) return;
-            
-            var isFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
-            
-            if (isMobile) {
-                if (isLandscape && isFullscreen) {
-                    settingsContainer.set('right', '3%');
-                } else {
-                    settingsContainer.set('right', '2%');
-                }
-            }
-            
-            var buttonMenuSup = window.tdvplayer.getById('Container_B1571269_BF46_B846_41D9_B94D861499DF');
-            var buttonSetContainer = window.tdvplayer.getById('Container_B1573269_BF46_B846_41AD_E3E55F50C328');
-            
-            if (isMobile && isLandscape && !window.isVrModeRendered) {
-                var availH = window.innerHeight - 10;
-                if (availH < 588) settingsContainer.set('height', availH);
-                settingsContainer.set('overflow', 'visible');
-                
-                if (buttonSetContainer) {
-                    buttonSetContainer.set('top', 110);
-                    var remainH = availH - 115;
-                    if (remainH > 450) remainH = 450;
-                    buttonSetContainer.set('height', remainH);
-                    buttonSetContainer.set('overflow', 'scroll');
-                }
-            } else {
-                settingsContainer.set('height', 588.15);
-                settingsContainer.set('overflow', 'scroll');
-                if (buttonSetContainer) {
-                    buttonSetContainer.set('top', '14.96%');
-                    buttonSetContainer.set('height', '59.417%');
-                    buttonSetContainer.set('overflow', 'visible');
-                }
-            }
-        }
-        
-        setInterval(adjustSettings, 400);
-        window.addEventListener('resize', adjustSettings);
-    })();
+            setInterval(adjustSettings, 400);
+            window.addEventListener('resize', adjustSettings);
+        })();
     </script>
 </head>
 

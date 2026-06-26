@@ -4076,7 +4076,7 @@
         {
             "enabledInCardboard": true,
             "class": "HotspotPanoramaOverlay",
-            "rollOverDisplay": false,
+            "rollOverDisplay": true,
             "items": [
                 {
                     "class": "HotspotPanoramaOverlayImage",
