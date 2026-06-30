@@ -13886,7 +13886,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_0.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -13940,7 +13940,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_1.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -13994,7 +13994,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_2.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14048,7 +14048,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_3.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14102,7 +14102,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_4.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14156,7 +14156,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_6.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14210,7 +14210,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_7.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14264,7 +14264,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_8.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14318,7 +14318,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_9.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14372,7 +14372,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_10.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14426,7 +14426,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_11.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14480,7 +14480,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_12.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14534,7 +14534,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_13.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }
@@ -14588,7 +14588,7 @@
               "url": "media/map_0FB80333_02DE_2372_4183_9B067342910B_HS_14.png",
               "class": "ImageResourceLevel",
               "width": 57,
-              "height": 67
+              "height": 134
             }
           ]
         }

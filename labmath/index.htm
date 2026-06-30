@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>lab math</title>
@@ -872,5 +872,32 @@ loadTour()
 <!-- Modal Popup Ruangan -->
 
 
+<style>
+.nadir-watermark-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(40%);
+    width: 220px;
+    z-index: 9999;
+    pointer-events: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nadir-watermark-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.5;
+    filter: brightness(0) invert(1);
+}
+</style>
+<div class="nadir-watermark-container">
+    <img src="media/watermark.png" alt="Watermark">
+</div>
 </body>
 </html>
+
+
+

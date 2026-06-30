@@ -6801,7 +6801,7 @@
                         "levels": [
                             {
                                 "url": "media/panorama_18D01CC6_1348_3440_41A2_BD2321889440_0_HS_7_1_6_map.gif",
-                                "width": 43,
+                                "width": 86,
                                 "class": "ImageResourceLevel",
                                 "height": 200
                             }
@@ -7148,7 +7148,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 36.15,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7164,7 +7164,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1159.37
             },
             "class": "AreaHotspotMapOverlay",
@@ -7182,16 +7182,16 @@
             },
             "image": {
                 "x": 36.15,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1159.37,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_0.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -7202,7 +7202,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 249.11,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7218,7 +7218,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1184.12
             },
             "class": "AreaHotspotMapOverlay",
@@ -7236,16 +7236,16 @@
             },
             "image": {
                 "x": 249.11,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1184.12,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_1.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -7256,7 +7256,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 377.67,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7272,7 +7272,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1170.94
             },
             "class": "AreaHotspotMapOverlay",
@@ -7290,16 +7290,16 @@
             },
             "image": {
                 "x": 377.67,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1170.94,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_2.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -7310,7 +7310,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 631.23,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7326,7 +7326,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1161.5
             },
             "class": "AreaHotspotMapOverlay",
@@ -7344,16 +7344,16 @@
             },
             "image": {
                 "x": 631.23,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1161.5,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_3.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -7364,7 +7364,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 765.49,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7380,7 +7380,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1157.41
             },
             "class": "AreaHotspotMapOverlay",
@@ -7398,16 +7398,16 @@
             },
             "image": {
                 "x": 765.49,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1157.41,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_4.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -7418,7 +7418,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 1290.06,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7434,7 +7434,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1170.94
             },
             "class": "AreaHotspotMapOverlay",
@@ -7452,16 +7452,16 @@
             },
             "image": {
                 "x": 1290.06,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1170.94,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_5.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -7472,7 +7472,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 778.85,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7488,7 +7488,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1622.86
             },
             "class": "AreaHotspotMapOverlay",
@@ -7506,16 +7506,16 @@
             },
             "image": {
                 "x": 778.85,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1622.86,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_6.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -7526,7 +7526,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 53.59,
+                "width": 107.18,
                 "x": 764.78,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -7542,7 +7542,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1978.81
             },
             "class": "AreaHotspotMapOverlay",
@@ -7560,16 +7560,16 @@
             },
             "image": {
                 "x": 764.78,
-                "height": 67.99,
+                "height": 135.98,
                 "y": 1978.81,
-                "width": 53.59,
+                "width": 107.18,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_1B0E5F5C_17EC_9CA5_41B4_240F73C6E463_HS_7.png",
-                            "width": 53,
+                            "width": 106,
                             "class": "ImageResourceLevel",
-                            "height": 67
+                            "height": 134
                         }
                     ],
                     "class": "ImageResource"
@@ -8016,7 +8016,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1116.43,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8032,7 +8032,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 1591.24
             },
             "class": "AreaHotspotMapOverlay",
@@ -8050,16 +8050,16 @@
             },
             "image": {
                 "x": 1116.16,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 1591.1,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_0.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"
@@ -8070,7 +8070,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1132.37,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8086,7 +8086,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 1361.87
             },
             "class": "AreaHotspotMapOverlay",
@@ -8104,16 +8104,16 @@
             },
             "image": {
                 "x": 1132.23,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 1361.74,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_1.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"
@@ -8124,7 +8124,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1162.92,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8140,7 +8140,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 1245.85
             },
             "class": "AreaHotspotMapOverlay",
@@ -8158,16 +8158,16 @@
             },
             "image": {
                 "x": 1162.65,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 1245.71,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_2.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"
@@ -8178,7 +8178,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1184.35,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8194,7 +8194,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 982.85
             },
             "class": "AreaHotspotMapOverlay",
@@ -8212,16 +8212,16 @@
             },
             "image": {
                 "x": 1184.22,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 982.72,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_3.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"
@@ -8232,7 +8232,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1189.98,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8248,7 +8248,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 806.67
             },
             "class": "AreaHotspotMapOverlay",
@@ -8266,16 +8266,16 @@
             },
             "image": {
                 "x": 1189.84,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 806.54,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_4.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"
@@ -8286,7 +8286,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1622.72,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8302,7 +8302,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 827.44
             },
             "class": "AreaHotspotMapOverlay",
@@ -8320,16 +8320,16 @@
             },
             "image": {
                 "x": 1622.45,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 827.3,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_5.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"
@@ -8340,7 +8340,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1989.55,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8356,7 +8356,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 830.92
             },
             "class": "AreaHotspotMapOverlay",
@@ -8374,16 +8374,16 @@
             },
             "image": {
                 "x": 1989.42,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 830.79,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_6.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"
@@ -8394,7 +8394,7 @@
         {
             "useHandCursor": true,
             "map": {
-                "width": 43.62,
+                "width": 87.24,
                 "x": 1200.29,
                 "class": "HotspotMapOverlayMap",
                 "offsetX": 0,
@@ -8410,7 +8410,7 @@
                     "class": "ImageResource"
                 },
                 "offsetY": 0,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 349.54
             },
             "class": "AreaHotspotMapOverlay",
@@ -8428,16 +8428,16 @@
             },
             "image": {
                 "x": 1200.03,
-                "height": 55.06,
+                "height": 110.12,
                 "y": 349.41,
-                "width": 43.62,
+                "width": 87.24,
                 "image": {
                     "levels": [
                         {
                             "url": "media/map_0EA0810D_2A24_30B9_41A7_BE6E28AD0F14_HS_7.png",
-                            "width": 43,
+                            "width": 86,
                             "class": "ImageResourceLevel",
-                            "height": 55
+                            "height": 110
                         }
                     ],
                     "class": "ImageResource"

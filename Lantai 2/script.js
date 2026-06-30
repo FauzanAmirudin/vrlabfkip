@@ -2664,7 +2664,7 @@
                                 "url": "media/panorama_0B945D70_13B8_5441_41AB_71247990FC35_0_HS_7_0.png",
                                 "class": "ImageResourceLevel",
                                 "width": 117,
-                                "height": 55
+                                "height": 110
                             }
                         ]
                     },
