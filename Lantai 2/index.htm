@@ -350,7 +350,7 @@ loadTour()
         .room-card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 4px solid #3498db; transition: filter 0.3s ease; }
         .room-card:hover img { filter: brightness(1.05); }
         .room-card h3 { margin: 16px; font-size: 1.15rem; text-align: center; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #333333; font-weight: 600; }
-        @media (max-width: 1024px) { .list_room { grid-template-columns: repeat(2, 1fr); left: 10%; right: 10%; } }
+        @media (max-width: 1024px) { .list_room { grid-template-columns: repeat(2, 1fr); left: 10%; right: 5%; } }
         @media (max-width: 768px) { .list_room { top: 5%; bottom: 5%; left: 5%; right: 5%; padding: 20px; grid-template-columns: 1fr; gap: 20px; } .room-card img { height: 200px; } .list_room_title { font-size: 1.5rem; } }
     /* Responsive Margins for Title Container */
     @media (max-width: 1024px) {
@@ -870,14 +870,12 @@ loadTour()
     }</style>
 
 <!-- Modal Popup Ruangan -->
-
-
 <style>
 .nadir-watermark-container {
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(40%);
+    right: 5%;
+    transform: translateY(40%);
     width: 220px;
     z-index: 9999;
     pointer-events: none;
@@ -896,6 +894,20 @@ loadTour()
 <div class="nadir-watermark-container">
     <img src="media/watermark.png" alt="Watermark">
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var checkExist = setInterval(function() {
+       if (document.querySelector('#viewer canvas')) {
+          var viewer = document.getElementById("viewer");
+          var watermark = document.querySelector(".nadir-watermark-container");
+          if (viewer && watermark) {
+             viewer.appendChild(watermark);
+          }
+          clearInterval(checkExist);
+       }
+    }, 1000);
+});
+</script>
 </body>
 </html>
 

@@ -484,7 +484,7 @@
             .list_room {
                 grid-template-columns: repeat(2, 1fr);
                 left: 10%;
-                right: 10%;
+                right: 5%;
             }
         }
 
@@ -1121,14 +1121,12 @@
     </style>
 
     <!-- Modal Popup Ruangan -->
-
-
 <style>
 .nadir-watermark-container {
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(40%);
+    right: 5%;
+    transform: translateY(40%);
     width: 220px;
     z-index: 9999;
     pointer-events: none;
@@ -1147,6 +1145,20 @@
 <div class="nadir-watermark-container">
     <img src="media/watermark.png" alt="Watermark">
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var checkExist = setInterval(function() {
+       if (document.querySelector('#viewer canvas')) {
+          var viewer = document.getElementById("viewer");
+          var watermark = document.querySelector(".nadir-watermark-container");
+          if (viewer && watermark) {
+             viewer.appendChild(watermark);
+          }
+          clearInterval(checkExist);
+       }
+    }, 1000);
+});
+</script>
 </body>
 
 </html>

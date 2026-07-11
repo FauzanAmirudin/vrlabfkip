@@ -9840,16 +9840,17 @@
     },
     {
       "transparencyActive": true,
-      "maxHeight": 58,
+      "maxHeight": 51.5,
       "toolTipFontFamily": "Arial",
       "propagateClick": true,
       "id": "IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081",
+      "rollOverIconURL": "skin/IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081_rollover.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
       "paddingLeft": 0,
       "borderSize": 0,
-      "width": 58,
+      "width": 45.5,
       "minHeight": 1,
       "toolTip": "Layar Penuh",
       "horizontalAlign": "center",
@@ -9867,7 +9868,7 @@
       "toolTipFontWeight": "normal",
       "mode": "toggle",
       "toolTipTextShadowBlurRadius": 3,
-      "height": 58,
+      "height": 51.5,
       "toolTipBorderSize": 1,
       "toolTipShadowColor": "#333333",
       "paddingTop": 0,
@@ -9887,7 +9888,7 @@
       "toolTipFontStyle": "normal",
       "cursor": "hand",
       "toolTipShadowVerticalLength": 0,
-      "maxWidth": 58,
+      "maxWidth": 45.5,
       "data": {
         "name": "IconButton FULLSCREEN"
       },
@@ -11799,6 +11800,7 @@
       "areas": [
         {
           "mapColor": "#FF0000",
+          "click": "this.mainPlayList.set('selectedIndex', 0)",
           "class": "HotspotPanoramaOverlayArea"
         }
       ],
@@ -13229,7 +13231,7 @@
         {
           "class": "HotspotPanoramaOverlayArea",
           "mapColor": "#FF0000",
-          "click": "this.mainPlayList.set('selectedIndex', 6)"
+          "click": "this.startPanoramaWithCamera(this.panorama_0E181F5E_05AE_0A05_416D_04530F9BD830, this.camera_EB8C2758_AACC_ECBA_41E4_BEA6B01D9F6B); this.mainPlayList.set('selectedIndex', 5)"
         }
       ],
       "data": {
@@ -13847,14 +13849,7 @@
           "pitch": 0,
           "yaw": 0
         }
-      ],
-      "useHandCursor": true,
-      "areas": [
-        {
-          "class": "HotspotPanoramaOverlayArea",
-          "mapColor": "#FF0000",
-          "toolTip": "Glass Cabinet"
-        }
+
       ],
       "id": "overlay_99C569FC_A4ED_F6F3_41D1_857D01F1E4FD",
       "data": {
@@ -14364,16 +14359,17 @@
     },
     {
       "transparencyActive": true,
-      "maxHeight": 58,
+      "maxHeight": 51.5,
       "toolTipFontFamily": "Arial",
       "propagateClick": true,
       "id": "IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781",
+      "rollOverIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_rollover.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
       "paddingLeft": 0,
       "borderSize": 0,
-      "width": 58,
+      "width": 45.5,
       "minHeight": 1,
       "toolTip": "Nonaktifkan Hotspot",
       "horizontalAlign": "center",
@@ -14384,14 +14380,14 @@
       "verticalAlign": "middle",
       "toolTipTextShadowColor": "#000000",
       "toolTipOpacity": 1,
-      "iconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781.png",
+      "iconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_v3.png",
       "pressedRollOverIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_pressed_rollover.png",
       "minWidth": 1,
       "toolTipPaddingBottom": 4,
       "toolTipFontWeight": "normal",
       "mode": "toggle",
       "toolTipTextShadowBlurRadius": 3,
-      "height": 58,
+      "height": 51.5,
       "toolTipBorderSize": 1,
       "toolTipShadowColor": "#333333",
       "paddingTop": 0,
@@ -14405,13 +14401,13 @@
       "toolTipBorderRadius": 3,
       "borderRadius": 0,
       "toolTipShadowOpacity": 1,
-      "pressedIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_pressed.png",
+      "pressedIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_pressed_v3.png",
       "toolTipShadowHorizontalLength": 0,
       "toolTipPaddingRight": 6,
       "toolTipFontStyle": "normal",
       "cursor": "hand",
       "toolTipShadowVerticalLength": 0,
-      "maxWidth": 58,
+      "maxWidth": 45.5,
       "data": {
         "name": "IconButton HS "
       },
@@ -14419,17 +14415,18 @@
     },
     {
       "transparencyActive": true,
-      "maxHeight": 58,
+      "maxHeight": 51.5,
       "toolTipFontFamily": "Arial",
       "toolTipShadowVerticalLength": 0,
       "propagateClick": true,
       "id": "IconButton_B156C269_BF46_B846_41B6_1BAAE2858250",
+      "rollOverIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_rollover_v2.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
       "paddingLeft": 0,
       "borderSize": 0,
-      "width": 58,
+      "width": 45.5,
       "minHeight": 1,
       "toolTip": "Gyroscope",
       "horizontalAlign": "center",
@@ -14440,14 +14437,14 @@
       "verticalAlign": "middle",
       "toolTipTextShadowColor": "#000000",
       "toolTipOpacity": 1,
-      "iconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250.png",
-      "pressedRollOverIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_pressed_rollover.png",
+      "iconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_v2.png",
+      "pressedRollOverIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_pressed_rollover_v2.png",
       "minWidth": 1,
       "toolTipPaddingBottom": 4,
       "toolTipFontWeight": "normal",
       "mode": "toggle",
       "toolTipTextShadowBlurRadius": 3,
-      "height": 58,
+      "height": 51.5,
       "toolTipBorderSize": 1,
       "toolTipShadowColor": "#333333",
       "paddingTop": 0,
@@ -14461,12 +14458,12 @@
       "toolTipBorderRadius": 3,
       "borderRadius": 0,
       "toolTipShadowOpacity": 1,
-      "pressedIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_pressed.png",
+      "pressedIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_pressed_v2.png",
       "toolTipPaddingRight": 6,
       "toolTipFontStyle": "normal",
       "cursor": "hand",
       "toolTipShadowHorizontalLength": 0,
-      "maxWidth": 58,
+      "maxWidth": 45.5,
       "data": {
         "name": "IconButton GYRO"
       },
@@ -17932,7 +17929,8 @@
       "areas": [
         {
           "mapColor": "#FF0000",
-          "class": "HotspotPanoramaOverlayArea"
+          "class": "HotspotPanoramaOverlayArea",
+          "click": "this.startPanoramaWithCamera(this.panorama_0E3A61E8_05AE_760E_4150_28C072AD2F2C, this.camera_EBA7D782_AACC_EB89_41BC_CFE03E35FC14); this.mainPlayList.set('selectedIndex', 10)"
         }
       ],
       "id": "overlay_E0BA6D7C_AACB_9F79_41DA_44F90939181E",
@@ -19638,7 +19636,7 @@
       "toolTipBorderColor": "#767676",
       "paddingLeft": 0,
       "borderSize": 0,
-      "width": 44,
+      "width": 45.5,
       "minHeight": 0,
       "toolTip": "Panduan",
       "horizontalAlign": "center",
@@ -19657,7 +19655,7 @@
       "mode": "push",
       "toolTipTextShadowBlurRadius": 3,
       "click": "this.showPopupImage(this.ImageResource_95F4D308_A424_7B14_41C4_C0CE7476743A, null, '90%', '90%', this.FadeInEffect_95F42308_A424_7B14_41C9_4D184F418D24, this.FadeOutEffect_95F43308_A424_7B14_41D3_4CD60F6C36B2, {'iconLineWidth':5,'rollOverIconHeight':20,'pressedIconHeight':20,'rollOverIconColor':'#666666','rollOverBorderColor':'#000000','backgroundColorRatios':[0,0.09803921568627451,1],'rollOverIconWidth':20,'pressedBorderSize':0,'paddingRight':5,'paddingLeft':5,'rollOverBackgroundOpacity':0.3,'pressedBackgroundColor':['#DDDDDD','#EEEEEE','#FFFFFF'],'borderSize':0,'pressedIconColor':'#888888','backgroundOpacity':0.3,'iconHeight':20,'rollOverBackgroundColor':['#DDDDDD','#EEEEEE','#FFFFFF'],'backgroundColorDirection':'vertical','pressedIconWidth':20,'iconColor':'#000000','paddingTop':5,'rollOverIconLineWidth':5,'pressedBorderColor':'#000000','iconWidth':20,'borderColor':'#000000','rollOverBorderSize':0,'paddingBottom':5,'pressedBackgroundColorRatios':[0,0.09803921568627451,1],'pressedBackgroundColorDirection':'vertical','rollOverBackgroundColorRatios':[0,0.09803921568627451,1],'pressedBackgroundOpacity':0.3,'backgroundColor':['#DDDDDD','#EEEEEE','#FFFFFF'],'pressedIconLineWidth':5,'rollOverBackgroundColorDirection':'vertical'}, null, null, false)",
-      "height": 50,
+      "height": 51.5,
       "toolTipBorderSize": 1,
       "toolTipShadowColor": "#333333",
       "rollOverIconURL": "skin/IconButton_94F08154_8BFA_FF0A_41A0_A685D9FB33B6_rollover.png",
